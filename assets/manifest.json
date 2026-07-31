@@ -37,6 +37,18 @@
       "detail": "403 on CONNECT to the Higgsfield CDN blocks downloading results into the repo and blocks visual QA from this session. Assets remain viewable in the Higgsfield gallery."
     }
   },
+  "videoModelGating": {
+    "finding": "The plan gate is per-model, not account-wide. seedance_2_0 is tier-locked on the free plan; seedance1_5 is not and generated successfully.",
+    "seedance_2_0": "BLOCKED - job_minimum_basic_plan_required (403)",
+    "seedance1_5": "ALLOWED on free plan - used for the budget proof cut",
+    "untested": ["seedance_2_0_mini", "veo3_1_lite", "kling3_0_turbo"],
+    "cheapestAlternatives": {
+      "seedance1_5@480p/4s": 2.4,
+      "seedance_2_0_mini@480p/4s": 4,
+      "veo3_1_lite@4s": 4,
+      "kling3_0_turbo@720p/3s": 4.5
+    }
+  },
   "videoCostLadder": {
     "4k/std/10s": 220,
     "4k/std/5s": 110,
