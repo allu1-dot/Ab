@@ -1,0 +1,87 @@
+{
+  "$comment": "Generation manifest. Fire in listed order — heroes and video depend on hero-00-master. Costs are live preflight figures from the Higgsfield MCP, not estimates.",
+  "artDirection": "art-direction/hero-lock.md",
+  "promptBook": "prompts/prompt-book.md",
+  "palette": {
+    "deepNavy": "#1B3A6B",
+    "signalOrange": "#C4551A",
+    "nearBlack": "#0A0F1A",
+    "coldWhite": "#E8F1F7"
+  },
+  "budget": {
+    "balanceAtPlanning": 10,
+    "planType": "free",
+    "unlimAvailable": false,
+    "totalRequired": 264,
+    "totalImagesOnly": 44,
+    "shortfall": 254,
+    "note": "remove_background has no cost-preflight endpoint; the 5 particle cutouts are additional to totalRequired."
+  },
+  "unitCosts": {
+    "nano_banana_pro@1k": 2,
+    "nano_banana_pro@2k": 2,
+    "nano_banana_pro@4k": 4,
+    "seedance_2_0@1080p/std/5s": 45,
+    "seedance_2_0@4k/std/5s": 110,
+    "seedance_2_0@4k/std/10s": 220
+  },
+  "assets": [
+    {
+      "id": "texture-01-bottle-wrap",
+      "group": "texture",
+      "order": 1,
+      "model": "nano_banana_pro",
+      "resolution": "4k",
+      "aspectRatio": "21:9",
+      "cost": 4,
+      "out": "assets/textures/",
+      "dependsOn": null,
+      "status": "pending"
+    },
+    {
+      "id": "hero-00-master",
+      "group": "hero",
+      "order": 2,
+      "model": "nano_banana_pro",
+      "resolution": "2k",
+      "aspectRatio": "4:5",
+      "cost": 2,
+      "out": "assets/heroes/",
+      "dependsOn": null,
+      "status": "pending",
+      "note": "Generated alone and first. Every flavour dial and the video reference this."
+    },
+    { "id": "hero-01-chocolate", "group": "hero", "order": 3, "model": "nano_banana_pro", "resolution": "2k", "aspectRatio": "4:5", "cost": 2, "out": "assets/heroes/", "dependsOn": "hero-00-master", "dial": "deep cocoa-brown matte", "status": "pending" },
+    { "id": "hero-02-vanilla", "group": "hero", "order": 4, "model": "nano_banana_pro", "resolution": "2k", "aspectRatio": "4:5", "cost": 2, "out": "assets/heroes/", "dependsOn": "hero-00-master", "dial": "warm ivory-cream matte", "status": "pending" },
+    { "id": "hero-03-citrus", "group": "hero", "order": 5, "model": "nano_banana_pro", "resolution": "2k", "aspectRatio": "4:5", "cost": 2, "out": "assets/heroes/", "dependsOn": "hero-00-master", "dial": "bright citrus yellow-orange matte", "status": "pending" },
+    { "id": "hero-04-mixed-berry", "group": "hero", "order": 6, "model": "nano_banana_pro", "resolution": "2k", "aspectRatio": "4:5", "cost": 2, "out": "assets/heroes/", "dependsOn": "hero-00-master", "dial": "deep magenta-violet matte", "status": "pending" },
+    { "id": "hero-05-cookies-cream", "group": "hero", "order": 7, "model": "nano_banana_pro", "resolution": "2k", "aspectRatio": "4:5", "cost": 2, "out": "assets/heroes/", "dependsOn": "hero-00-master", "dial": "off-white matte with fine dark speckle", "status": "pending" },
+    { "id": "hero-06-salted-caramel", "group": "hero", "order": 8, "model": "nano_banana_pro", "resolution": "2k", "aspectRatio": "4:5", "cost": 2, "out": "assets/heroes/", "dependsOn": "hero-00-master", "dial": "burnt amber-caramel matte", "status": "pending" },
+    { "id": "hero-07-plain", "group": "hero", "order": 9, "model": "nano_banana_pro", "resolution": "2k", "aspectRatio": "4:5", "cost": 2, "out": "assets/heroes/", "dependsOn": "hero-00-master", "dial": "bare matte signal orange #C4551A", "status": "pending" },
+    { "id": "hero-08-plus-c-creatine", "group": "hero", "order": 10, "model": "nano_banana_pro", "resolution": "2k", "aspectRatio": "4:5", "cost": 2, "out": "assets/heroes/", "dependsOn": "hero-00-master", "dial": "cold clinical white-blue matte", "status": "pending" },
+    { "id": "particle-01-powder-burst", "group": "particle", "order": 11, "model": "nano_banana_pro", "resolution": "2k", "aspectRatio": "1:1", "cost": 2, "out": "assets/particles/", "dependsOn": null, "postProcess": "remove_background", "status": "pending" },
+    { "id": "particle-02-protein-bloom", "group": "particle", "order": 12, "model": "nano_banana_pro", "resolution": "2k", "aspectRatio": "1:1", "cost": 2, "out": "assets/particles/", "dependsOn": null, "postProcess": "remove_background", "status": "pending" },
+    { "id": "particle-03-milk-swirl", "group": "particle", "order": 13, "model": "nano_banana_pro", "resolution": "2k", "aspectRatio": "1:1", "cost": 2, "out": "assets/particles/", "dependsOn": null, "postProcess": "remove_background", "status": "pending" },
+    { "id": "particle-04-ice-crystals", "group": "particle", "order": 14, "model": "nano_banana_pro", "resolution": "2k", "aspectRatio": "1:1", "cost": 2, "out": "assets/particles/", "dependsOn": null, "postProcess": "remove_background", "status": "pending" },
+    { "id": "particle-05-condensation", "group": "particle", "order": 15, "model": "nano_banana_pro", "resolution": "2k", "aspectRatio": "1:1", "cost": 2, "out": "assets/particles/", "dependsOn": null, "postProcess": "remove_background", "status": "pending" },
+    { "id": "bg-01-brushed-steel", "group": "background", "order": 16, "model": "nano_banana_pro", "resolution": "4k", "aspectRatio": "16:9", "cost": 4, "out": "assets/backgrounds/", "dependsOn": null, "status": "pending" },
+    { "id": "bg-02-navy-gradient", "group": "background", "order": 17, "model": "nano_banana_pro", "resolution": "4k", "aspectRatio": "16:9", "cost": 4, "out": "assets/backgrounds/", "dependsOn": null, "status": "pending" },
+    { "id": "bg-03-frosted-glass", "group": "background", "order": 18, "model": "nano_banana_pro", "resolution": "4k", "aspectRatio": "16:9", "cost": 4, "out": "assets/backgrounds/", "dependsOn": null, "status": "pending" },
+    {
+      "id": "video-01-hero",
+      "group": "video",
+      "order": 19,
+      "model": "seedance_2_0",
+      "resolution": "4k",
+      "mode": "std",
+      "duration": 10,
+      "aspectRatio": "16:9",
+      "generateAudio": false,
+      "cost": 220,
+      "out": "assets/video/",
+      "dependsOn": "hero-00-master",
+      "referenceRole": "image_references",
+      "status": "pending"
+    }
+  ]
+}
