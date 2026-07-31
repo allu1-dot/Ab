@@ -10,12 +10,21 @@
   },
   "budget": {
     "balanceAtPlanning": 10,
+    "spent": 4,
+    "remaining": 6,
     "planType": "free",
     "unlimAvailable": false,
     "totalRequired": 264,
     "totalImagesOnly": 44,
     "shortfall": 254,
-    "note": "remove_background has no cost-preflight endpoint; the 5 particle cutouts are additional to totalRequired."
+    "topupsAvailable": false,
+    "note": "remove_background has no cost-preflight endpoint; the 5 particle cutouts are additional to totalRequired. One-time credit packs are NOT purchasable on this workspace - only PLUS/ULTRA plan upgrades."
+  },
+  "delivery": {
+    "binariesInRepo": false,
+    "reason": "Session egress policy returns 403 on CONNECT to the Higgsfield CDN host d8j0ntlcm91z4.cloudfront.net, so generated files cannot be downloaded into the repo. Per /root/.ccr/README.md a 403 is an org policy denial and must be reported, not routed around.",
+    "whereAssetsLive": "The Higgsfield account gallery. This manifest tracks each asset by jobId and rawUrl so the set stays addressable.",
+    "toUnblock": "Allowlist the CDN host for this session, then the jobId/rawUrl pairs below can be fetched into assets/ and committed."
   },
   "unitCosts": {
     "nano_banana_pro@1k": 2,
@@ -48,10 +57,14 @@
       "cost": 2,
       "out": "assets/heroes/",
       "dependsOn": null,
-      "status": "pending",
-      "note": "Generated alone and first. Every flavour dial and the video reference this."
+      "status": "completed",
+      "jobId": "42ff1343-70a9-43e7-9e77-a5ee1f5e5ce5",
+      "servedByModel": "nano_banana_2",
+      "dimensions": "1856x2304",
+      "rawUrl": "https://d8j0ntlcm91z4.cloudfront.net/user_3HHGJkUMLOxw9j9hlULRajnVrqX/hf_20260731_174348_42ff1343-70a9-43e7-9e77-a5ee1f5e5ce5.png",
+      "note": "Generated alone and first. Every flavour dial and the video reference this. NOT yet visually approved - see delivery.reason."
     },
-    { "id": "hero-01-chocolate", "group": "hero", "order": 3, "model": "nano_banana_pro", "resolution": "2k", "aspectRatio": "4:5", "cost": 2, "out": "assets/heroes/", "dependsOn": "hero-00-master", "dial": "deep cocoa-brown matte", "status": "pending" },
+    { "id": "hero-01-chocolate", "group": "hero", "order": 3, "model": "nano_banana_pro", "resolution": "2k", "aspectRatio": "4:5", "cost": 2, "out": "assets/heroes/", "dependsOn": "hero-00-master", "dial": "deep cocoa-brown matte", "status": "completed", "jobId": "aaa0d6b8-25d1-4bdc-80b9-d7b87a4d6c58", "servedByModel": "nano_banana_2", "dimensions": "1856x2304", "rawUrl": "https://d8j0ntlcm91z4.cloudfront.net/user_3HHGJkUMLOxw9j9hlULRajnVrqX/hf_20260731_174537_aaa0d6b8-25d1-4bdc-80b9-d7b87a4d6c58.png", "note": "Pipeline-validation roll: confirms the master jobId is accepted as an `image` reference and carried into input_images, and returns identical 1856x2304 framing. NOT yet visually approved - see delivery.reason." },
     { "id": "hero-02-vanilla", "group": "hero", "order": 4, "model": "nano_banana_pro", "resolution": "2k", "aspectRatio": "4:5", "cost": 2, "out": "assets/heroes/", "dependsOn": "hero-00-master", "dial": "warm ivory-cream matte", "status": "pending" },
     { "id": "hero-03-citrus", "group": "hero", "order": 5, "model": "nano_banana_pro", "resolution": "2k", "aspectRatio": "4:5", "cost": 2, "out": "assets/heroes/", "dependsOn": "hero-00-master", "dial": "bright citrus yellow-orange matte", "status": "pending" },
     { "id": "hero-04-mixed-berry", "group": "hero", "order": 6, "model": "nano_banana_pro", "resolution": "2k", "aspectRatio": "4:5", "cost": 2, "out": "assets/heroes/", "dependsOn": "hero-00-master", "dial": "deep magenta-violet matte", "status": "pending" },

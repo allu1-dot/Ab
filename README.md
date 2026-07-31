@@ -47,7 +47,31 @@ Particle background removal has no cost-preflight endpoint and is additional.
 
 Video alternatives: 4K std 5s = 110 credits · 1080p std 5s = 45 credits.
 
-**Status: blocked on credits.** Balance at planning time was 10 credits on the
-free plan, with trial/unlimited generations unavailable — about 4% of the run,
-and the video alone is 22× the balance. Everything above is complete and
-costed; generation fires as soon as the account is funded.
+## Status
+
+**Blocked on credits.** Balance was 10 on the free plan with trial/unlimited
+generations unavailable — about 4% of the run, and the video alone is 22× the
+balance. One-time credit packs are not purchasable on this workspace; only
+PLUS/ULTRA plan upgrades are offered.
+
+Generated so far (4 credits spent, 6 remaining):
+
+| Asset | Job ID | Result |
+|---|---|---|
+| `hero-00-master` | `42ff1343…5ce5` | 1856×2304 |
+| `hero-01-chocolate` | `aaa0d6b8…6c58` | 1856×2304, master accepted as `image` reference |
+
+Those two exist to validate the pipeline before any large spend, and they do:
+the master's job ID is accepted as a reference and the derived dial comes back
+at identical framing. Remaining: 16 images, 5 cutouts, 1 video.
+
+## Two things that need you
+
+1. **Credits** — 254 short of the full run.
+2. **Egress** — this session's policy returns 403 on CONNECT to the Higgsfield
+   CDN (`d8j0ntlcm91z4.cloudfront.net`), so generated files cannot be pulled
+   into the repo and cannot be visually checked from here. The assets live in
+   the Higgsfield gallery; `manifest.json` tracks each by job ID and URL.
+   Allowlisting that host lets the binaries be committed alongside the specs.
+
+Neither render above has been approved by eye — see `delivery` in the manifest.
