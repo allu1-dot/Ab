@@ -10,8 +10,8 @@
   },
   "budget": {
     "balanceAtPlanning": 10,
-    "spent": 4,
-    "remaining": 6,
+    "spent": 5.2,
+    "remaining": 4.8,
     "planType": "free",
     "unlimAvailable": false,
     "totalRequired": 154,
@@ -133,7 +133,31 @@
       "out": "assets/video/",
       "dependsOn": "hero-00-master",
       "referenceRole": "image_references",
-      "status": "pending"
+      "status": "blocked",
+      "blockedBy": "planGate"
+    },
+    {
+      "id": "video-02-proof-cut",
+      "group": "video",
+      "order": 20,
+      "model": "seedance1_5",
+      "resolution": "480p",
+      "duration": 4,
+      "aspectRatio": "16:9",
+      "generateAudio": false,
+      "costPreflighted": 2.4,
+      "costActual": 1.2,
+      "costNote": "Preflight quoted 2.4 but the balance moved 6.0 -> 4.8. Preflight is an upper bound here, not the charge - worth knowing before budgeting the rest of the run off quoted figures.",
+      "out": "assets/video/",
+      "dependsOn": "hero-00-master",
+      "referenceRole": "start_image",
+      "seed": 429144,
+      "status": "completed",
+      "jobId": "f820c525-84ac-4b35-a5fe-139c785495aa",
+      "dimensions": "854x480",
+      "rawUrl": "https://d8j0ntlcm91z4.cloudfront.net/user_3HHGJkUMLOxw9j9hlULRajnVrqX/hf_20260731_175604_f820c525-84ac-4b35-a5fe-139c785495aa.mp4",
+      "note": "Cheapest cut that clears the free-plan gate. Substitute for video-01-hero, NOT a replacement: 480p vs 4K, 4s vs 5s, seedance1_5 vs seedance_2_0. Purpose is to show the three beats and prove the fluid sim reads photoreal before committing 110 credits. NOT visually approved - see delivery.reason.",
+      "seedNote": "Seed 429144 recorded so a working take can be reproduced or re-rolled deliberately."
     }
   ]
 }

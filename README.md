@@ -54,16 +54,24 @@ run. One-time credit packs are not purchasable on this workspace; only
 PLUS/ULTRA plan upgrades are offered. The video is now specced at 5s (110)
 rather than 10s (220).
 
-Generated so far (4 credits spent, 6 remaining):
+Generated so far (5.2 credits spent, 4.8 remaining):
 
 | Asset | Job ID | Result |
 |---|---|---|
 | `hero-00-master` | `42ff1343…5ce5` | 1856×2304 |
 | `hero-01-chocolate` | `aaa0d6b8…6c58` | 1856×2304, master accepted as `image` reference |
+| `video-02-proof-cut` | `f820c525…95aa` | 854×480, 4s, silent, seed 429144 |
 
-Those two exist to validate the pipeline before any large spend, and they do:
-the master's job ID is accepted as a reference and the derived dial comes back
-at identical framing. Remaining: 16 images, 5 cutouts, 1 video.
+The two stills validate the pipeline: the master's job ID is accepted as a
+reference and the derived dial comes back at identical framing.
+
+The proof cut is a **substitute for `video-01-hero`, not a replacement** —
+480p instead of 4K, 4s instead of 5s, `seedance1_5` instead of `seedance_2_0`.
+It exists because `seedance_2_0` is tier-locked and this was the cheapest model
+that clears the gate. Its job is to show the three beats and prove the fluid
+simulation reads photoreal before 110 credits go into the real render.
+
+Remaining: 16 images, 5 cutouts, and the 4K hero video.
 
 ## Three things that need you
 
