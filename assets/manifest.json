@@ -20,6 +20,32 @@
     "topupsAvailable": false,
     "note": "remove_background has no cost-preflight endpoint; the 5 particle cutouts are additional to totalRequired. One-time credit packs are NOT purchasable on this workspace - only PLUS/ULTRA plan upgrades."
   },
+  "blockers": {
+    "planGate": {
+      "severity": "hard",
+      "error": "seedance_2_0 backend request failed (403): job_minimum_basic_plan_required",
+      "detail": "Seedance 2.0 is gated behind a minimum paid plan, independent of credit balance. A 480p/fast/4s test costing exactly the available 6 credits was rejected on plan tier, not funds. No credits were charged - the job never started.",
+      "implication": "Credits alone cannot unblock the video. A PLUS or ULTRA plan is required; both list Seedance 2.0 as full access.",
+      "requestId": "157d9c6d-312d-447c-9c8d-42d4121f1a69"
+    },
+    "credits": {
+      "severity": "hard",
+      "detail": "6 credits against a 154-credit run. One-time credit packs are not purchasable on this workspace - only plan upgrades."
+    },
+    "egress": {
+      "severity": "soft",
+      "detail": "403 on CONNECT to the Higgsfield CDN blocks downloading results into the repo and blocks visual QA from this session. Assets remain viewable in the Higgsfield gallery."
+    }
+  },
+  "videoCostLadder": {
+    "4k/std/10s": 220,
+    "4k/std/5s": 110,
+    "1080p/std/5s": 45,
+    "720p/fast/5s": 17.5,
+    "480p/fast/5s": 7.5,
+    "480p/fast/4s": 6,
+    "note": "All rungs are plan-gated. The ladder is kept for cost planning once a plan is active."
+  },
   "delivery": {
     "binariesInRepo": false,
     "reason": "Session egress policy returns 403 on CONNECT to the Higgsfield CDN host d8j0ntlcm91z4.cloudfront.net, so generated files cannot be downloaded into the repo. Per /root/.ccr/README.md a 403 is an org policy denial and must be reported, not routed around.",

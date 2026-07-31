@@ -65,13 +65,23 @@ Those two exist to validate the pipeline before any large spend, and they do:
 the master's job ID is accepted as a reference and the derived dial comes back
 at identical framing. Remaining: 16 images, 5 cutouts, 1 video.
 
-## Two things that need you
+## Three things that need you
 
-1. **Credits** — 254 short of the full run.
-2. **Egress** — this session's policy returns 403 on CONNECT to the Higgsfield
+1. **Plan tier — the hard blocker on the video.** Seedance 2.0 returns
+   `job_minimum_basic_plan_required` (403) on the free plan, independent of
+   credits. A 480p/fast/4s test costing exactly the 6 available credits was
+   rejected on tier, not funds, and nothing was charged. **Credits alone will
+   not unblock the video** — PLUS or ULTRA is required; both list Seedance 2.0
+   as full access.
+2. **Credits** — 148 short of the 154-credit run. One-time credit packs are not
+   purchasable on this workspace, only plan upgrades.
+3. **Egress** — this session's policy returns 403 on CONNECT to the Higgsfield
    CDN (`d8j0ntlcm91z4.cloudfront.net`), so generated files cannot be pulled
    into the repo and cannot be visually checked from here. The assets live in
    the Higgsfield gallery; `manifest.json` tracks each by job ID and URL.
    Allowlisting that host lets the binaries be committed alongside the specs.
 
 Neither render above has been approved by eye — see `delivery` in the manifest.
+
+The image half of the run is not plan-gated: the two heroes generated fine on
+the free plan. Only Seedance is tier-locked.
