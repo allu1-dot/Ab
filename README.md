@@ -40,19 +40,19 @@ Live preflight figures from the MCP, not estimates.
 | Particle plates (2K) | 5 | 10 |
 | Section backgrounds (4K) | 3 | 12 |
 | **Images subtotal** | **18** | **44** |
-| Seedance 2.0, 4K std 10s | 1 | 220 |
-| **Total** | **19** | **264** |
+| Seedance 2.0, 4K std 5s | 1 | 110 |
+| **Total** | **19** | **154** |
 
 Particle background removal has no cost-preflight endpoint and is additional.
 
-Video alternatives: 4K std 5s = 110 credits · 1080p std 5s = 45 credits.
+Video alternatives: 1080p std 5s = 45 credits · 4K std 10s = 220 credits.
 
 ## Status
 
-**Blocked on credits.** Balance was 10 on the free plan with trial/unlimited
-generations unavailable — about 4% of the run, and the video alone is 22× the
-balance. One-time credit packs are not purchasable on this workspace; only
-PLUS/ULTRA plan upgrades are offered.
+**Blocked on credits.** 6 credits remain on the free plan against a 154-credit
+run. One-time credit packs are not purchasable on this workspace; only
+PLUS/ULTRA plan upgrades are offered. The video is now specced at 5s (110)
+rather than 10s (220).
 
 Generated so far (4 credits spent, 6 remaining):
 

@@ -124,32 +124,41 @@ Shared tail, appended to each:
 
 ## 5. Cinematic video — `video-01-hero`
 
-- Model `seedance_2_0` · resolution `4k` · mode `std` · duration `10s` ·
+- Model `seedance_2_0` · resolution `4k` · mode `std` · duration `5s` ·
   aspect `16:9` · `generate_audio: false`
 - `hero-00-master` passed as `image_references` to lock the bottle
 
 `generate_audio` is off because this is a loop-friendly web hero — it plays
 muted. Flip it to `true` only if the cut is going somewhere with sound.
 
+**Why this prompt is not the 10s prompt with a smaller number.** At 5s the
+three beats get ~1.6s each. The long per-beat descriptions written for 10s make
+the model try to stage setup, action and settle inside each beat, and at 1.6s
+it either rushes all three or drops the third. So the beats are cut to one
+action verb each, the hand exit is removed, and the vortex — the beat that
+actually sells the product — is the one given room. Everything else is
+compressed to a clause.
+
 > Photoreal macro cinematography of a clear rPET protein bottle, physically
-> accurate, true fluid simulation, slow motion throughout, shallow macro depth
-> of field. Cold gym-fridge key light from upper left at 5600K, deep navy
-> #1B3A6B environment, near-black falloff, condensation beading on the chilled
-> glass.
+> accurate, true fluid simulation, slow motion, shallow macro depth of field.
+> Cold gym-fridge key light from upper left at 5600K, deep navy #1B3A6B
+> environment, near-black falloff, condensation on the chilled glass.
 >
-> Beat one: a single clean hand twists the collar dial to the right; the sealed
-> chamber releases and a measured dose of dry powder drops down into the water
-> below, the grains falling and dispersing with accurate weight. The hand
-> leaves frame.
+> Three continuous beats, no dead frames, no pauses between them:
 >
-> Beat two: the bottle shakes; the moulded two-ring vortex base bites the
-> liquid and drives a visible spiral, the powder blooming and folding through
-> the water in real turbulent tendrils until the liquid runs evenly mixed and
-> opaque.
+> One — a single clean hand twists the collar dial right and the sealed chamber
+> drops a dose of dry powder into the water.
 >
-> Beat three: the collar twists left and opens, condensation sliding on the
-> glass, the mixed liquid settling to stillness.
+> Two — the bottle shakes and the moulded two-ring vortex base drives a visible
+> spiral, the powder blooming through the water in real turbulent tendrils
+> until it runs evenly mixed and opaque. Hold on this.
 >
-> The shot begins and ends on the same still, evenly-lit bottle in the same
-> position so the clip loops seamlessly. Photoreal only — no stylised motion,
-> no cartoon physics, no speed ramps, no extra hands, no text, no logo.
+> Three — the collar twists left and opens.
+>
+> The shot begins and ends on the same still bottle in the same position so the
+> clip loops seamlessly. Photoreal only — no stylised motion, no cartoon
+> physics, no speed ramps, no extra hands, no text, no logo.
+
+If the cut comes back with beat three clipped, the fix is to drop beat one to a
+half-second dial-twist and let the powder already be falling on frame one —
+not to lengthen the clip.
