@@ -1,0 +1,87 @@
+# Clip 01 — "The Exit Moment" (قبل السيارة)
+
+The chosen hero clip: hyper-realistic, human-led, built directly on the
+customer journey in the business plan (§4.3): finish training → sight the
+machine on the exit path → tap → twist, shake, drink before the car.
+Inherits `../design-lock.md` — palette, geometry, cap colours, negatives.
+
+## Why this clip
+
+1. **It is the plan's own journey** — §4.3 word for word, turned into film.
+2. **Trust is the product's stated problem** (60.7 % discover via social;
+   counterfeit anxiety) — a real human face in a real Saudi gym is the trust
+   carrier. No abstract product float.
+3. **The ritual is self-explaining** (Rogers: observable, trialable — §4.1).
+   Half of new gym joiners are first-timers; the ad must double as a demo.
+4. **Realism sells the physics.** The fresh-vs-pre-mixed claim (survey Q12)
+   lives or dies on the powder drop and vortex reading photoreal.
+
+## Spec
+
+- **Format:** 9:16 vertical (social-first — the plan's discovery channel).
+  Later re-cuts: 16:9 web hero, 1:1.
+- **Duration:** 10 s master. If beats rush, split into 2 × 5 s shots
+  (A: corridor + machine; B: ritual + exit) and stitch.
+- **Model:** Seedance 2.0 (PLUS unlocked), master still passed as
+  `image_references` for identity lock.
+- **Audio:** generate off for the master (plays muted on social); sound pass
+  later if needed: gym hum, seal click, powder cascade, slosh, exhale. No
+  dialogue.
+- **SKU on camera:** MP-09 Milk protein Chocolate — brown dial, 25 g, milk
+  reads opaque white in the clear bottle (strongest visual contrast).
+
+## Beat sheet (10 s)
+
+| Time | Beat |
+|---|---|
+| 0.0–2.0 | Modern Saudi gym exit corridor, cool neon. Saudi man late 20s, athletic, light beard, navy training tee dark with sweat, towel on shoulder — walking out tired, deep breath. |
+| 2.0–3.5 | His face catches a navy-gold glow. The JUSTWIST machine: glass front, wall of colour-coded caps. He taps his watch on the reader. |
+| 3.5–5.0 | Elevator tray lifts the bottle gently. He takes it — condensation beads, tall cocoa-brown dial printed **25g**. |
+| 5.0–7.5 | Macro insert: right twist — soft click — a column of dry powder drops into the milk. Circular shake — visible vortex from the moulded base, powder blooming in turbulent tendrils to evenly mixed. |
+| 7.5–10.0 | Left twist, long sip, satisfied exhale, half-smile. He walks on toward the car park, bottle in hand. End frame clean for logo + TWIST · SHAKE · DRINK. |
+
+## Camera / grade
+
+Cinematic handheld feel; ~35 mm for the walk, 100 mm macro for the
+twist/vortex insert; shallow DOF. Cold gym neon against the machine's warm
+gold-on-navy glow (#002454 / #A86000). Real skin texture, sweat sheen, no
+beauty filter. Subtle 1.5× slow on the vortex only — otherwise real time.
+
+## Generation prompt (EN, final draft)
+
+> Hyper-photorealistic cinematic commercial footage, vertical 9:16. A Saudi
+> man in his late twenties, athletic build, short dark hair, light beard,
+> navy training t-shirt darkened with sweat, towel over one shoulder, walks
+> exhausted down a modern gym exit corridor under cool neon light. His face
+> catches a warm glow: a navy-and-gold JUSTWIST vending machine with a glass
+> front full of chilled clear bottles topped by colour-coded caps. He taps
+> his smartwatch on the payment reader; an elevator tray gently lifts one
+> bottle. He takes it — fine condensation beading on the cold clear bottle,
+> a tall cocoa-brown cap dial printed "25g", white milk inside. Macro
+> close-up: his fingers twist the upper dial right with a soft click and a
+> column of dry powder drops through the neck into the milk; he shakes the
+> bottle in a fast circular motion and the moulded base drives a visible
+> spiral vortex, the powder blooming in real turbulent tendrils until the
+> drink runs evenly mixed. He twists the lower collar left, opens it, takes
+> a long drink, exhales with quiet satisfaction and walks on toward the car
+> park with the bottle in hand. True fluid simulation, real skin texture and
+> sweat sheen, shallow cinematic depth of field, cold neon corridor against
+> warm gold machine glow, photoreal only — no stylised motion, no cartoon
+> physics, no extra hands, no on-screen text, no logos except on the machine
+> and cap.
+
+## Pipeline & cost discipline
+
+1. **Master still** (nano_banana_pro): athlete at the machine — locks face,
+   wardrobe, machine, bottle. ~2 credits.
+2. **Proof cut** at 480–720p from the still — verify beats + fluid sim
+   before real money. ~7–20 credits.
+3. **Final** 1080p (social) or 4K: preflight the exact cost before firing
+   (old ladder: 1080p/std/5s = 45; 4K/std/10s = 220 — confirm live).
+
+## Alternates (parked, not chosen)
+
+- **B — "أول مرة":** first-timer tries it while friends watch — social proof
+  angle, needs multi-character consistency (harder).
+- **C — Women's cut:** same journey, female athlete, women's gym — the
+  fastest-growing segment (13.05 % CAGR); strong second clip after the hero.
