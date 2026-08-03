@@ -85,8 +85,9 @@ beauty filter. Subtle 1.5× slow on the vortex only — otherwise real time.
 |---|---|---|---|---|
 | Proof cut 1 | `51643118-d122-4636-a91f-b931b7c32227` | seedance_2_0 · 480×854 · 10 s · std · silent · text-to-video (no reference — master still was skipped) | 10 cr actual (30 held, 20 released) | Completed 2026-08-03, awaiting founder eye |
 | Machine placement mock A | `618b52d5-1747-4cc8-a115-8b942a24309f` | nano_banana_pro→nb2 · 2K · 9:16 · text-only (uploads blocked by egress; machine + pool described from J8 render and founder's pool photos) | 2 cr | Completed, awaiting founder pick |
-| Machine placement mock B | `a73e1dff-f7cf-4bc4-826e-4e0f223dfadf` | same prompt, variant 2 | 2 cr | Rejected — founder picked A |
-| Placement mock A2 (anchor candidate) | `65350c3d-d08f-402a-ae99-d330c5a99bb8` | nano_banana_pro→nb2 · 2K · 9:16 · mock A passed as `image` ref; machine locked, hall rebuilt: full-width pool, swimmer mural, wave mural, red-white graphics, no glass partition | 2 cr | Completed, awaiting founder eye |
+| Machine placement mock B | `a73e1dff-f7cf-4bc4-826e-4e0f223dfadf` | same prompt, variant 2 | 2 cr | The keeper — sole survivor of the founder's gallery cleanup |
+| Placement mock A2 | `65350c3d-d08f-402a-ae99-d330c5a99bb8` | nano_banana_pro→nb2 · 2K · 9:16 · mock A as ref; no glass, lengthwise pool | 2 cr | Deleted by founder from gallery (with mock A) |
+| Placement mock B2 (anchor candidate) | `f6534391-d92b-4219-bb09-07347b0a17bf` | nano_banana_pro→nb2 · 2K · 9:16 · surviving mock B passed as `image` ref; machine locked right-of-centre; glass partition + pool view moved to the LEFT of frame; pool rotated CROSSWISE — lane ropes running parallel to the glass, swimmer/wave murals on the far long wall | 2 cr | Completed, awaiting founder eye |
 
 **Location change (founder direction, 2026-08-03):** the scene moves from a
 generic gym exit corridor to the founder's real club — the machine stands in
