@@ -79,6 +79,12 @@ beauty filter. Subtle 1.5× slow on the vortex only — otherwise real time.
 3. **Final** 1080p (social) or 4K: preflight the exact cost before firing
    (old ladder: 1080p/std/5s = 45; 4K/std/10s = 220 — confirm live).
 
+## Generation log
+
+| Take | Job ID | Spec | Cost | Status |
+|---|---|---|---|---|
+| Proof cut 1 | `51643118-d122-4636-a91f-b931b7c32227` | seedance_2_0 · 480×854 · 10 s · std · silent · text-to-video (no reference — master still was skipped) | 30 cr (balance 1002.8 → 972.8) | Completed 2026-08-03, awaiting founder eye |
+
 ## Alternates (parked, not chosen)
 
 - **B — "أول مرة":** first-timer tries it while friends watch — social proof
